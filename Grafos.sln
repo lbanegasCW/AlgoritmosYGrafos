@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parcial", "Parcial\Parcial.vcxproj", "{D2CEF484-19CC-481F-A9FE-279B2E0FF733}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Grafos", "Grafos\Grafos.vcxproj", "{D2CEF484-19CC-481F-A9FE-279B2E0FF733}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

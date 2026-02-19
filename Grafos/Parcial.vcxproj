@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{d2cef484-19cc-481f-a9fe-279b2e0ff733}</ProjectGuid>
-    <RootNamespace>Parcial</RootNamespace>
+    <RootNamespace>Grafos</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Parcial.cpp" />
+    <ClCompile Include="Grafos.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dijkstra.h" />
