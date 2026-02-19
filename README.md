@@ -1,34 +1,60 @@
-# README - Programa de Grafos en C++
+# Proyecto de Grafos en C++
 
-¡Bienvenido al repositorio del programa de Grafos en C++! Este programa te permite trabajar con grafos y aplicar diferentes algoritmos y operaciones sobre ellos. A continuación, te proporcionamos una breve descripción de los temas que abarca este programa:
+Aplicación de consola para crear un grafo no dirigido y ejecutar algoritmos clásicos de teoría de grafos.
 
-## Temas del Programa
+## Funcionalidades
 
-### 1. Ingreso de Vértices
-En este programa, puedes ingresar los vértices del grafo. Puedes agregar los vértices uno por uno o en grupos, según tus necesidades.
+El programa permite:
 
-### 2. Ingreso de Aristas
-Utiliza esta funcionalidad para ingresar las aristas del grafo. Puedes especificar los vértices de origen y destino, así como el peso asociado (en caso de que el grafo sea ponderado).
+1. Ingresar vértices (cantidad fija: `V = 5`).
+2. Ingresar aristas con peso.
+3. Mostrar el grafo como **lista de adyacencia**.
+4. Mostrar el grafo como **matriz de adyacencia**.
+5. Calcular caminos mínimos desde un origen con **Dijkstra**.
+6. Calcular caminos mínimos entre todos los pares con **Floyd-Warshall**.
+7. Recorrer el grafo en profundidad con **DFS**.
+8. Recorrer el grafo en anchura con **BFS**.
+9. Calcular un ciclo mínimo tipo **viajante (TSP por fuerza bruta)**.
 
-### 3. Representación en Lista de Adyacencia
-El programa te permite obtener la representación del grafo en forma de lista de adyacencia. Esta lista muestra los vértices y sus respectivas aristas adyacentes.
+## Requisitos
 
-### 4. Representación en Matriz de Adyacencia
-Esta opción te proporciona la representación del grafo en forma de matriz de adyacencia. La matriz muestra las conexiones entre los vértices y, en caso de que el grafo sea ponderado, también muestra los pesos correspondientes.
+- Compilador C++ con soporte de C++11 o superior.
+- Windows (si se usa Visual Studio) o Linux/macOS (si se compila con `g++`).
 
-### 5. Camino más Corto con Dijkstra
-Utiliza esta funcionalidad para encontrar el camino más corto entre dos vértices utilizando el algoritmo de Dijkstra. El programa te solicitará los vértices de origen y destino, y te mostrará el camino y su longitud.
+## Cómo compilar y ejecutar
 
-### 6. Camino por Floyd-Warshall
-Con esta opción, puedes encontrar el camino más corto entre todos los pares de vértices utilizando el algoritmo de Floyd-Warshall. El programa mostrará una matriz que representa las distancias mínimas entre todos los vértices.
+### Opción 1: Visual Studio
 
-### 7. Recorrido en Profundidad
-Utiliza esta funcionalidad para realizar un recorrido en profundidad (DFS) en el grafo. El programa mostrará el orden en el que se visitan los vértices durante el recorrido.
+1. Abrir `Grafos.sln`.
+2. Seleccionar configuración `Debug` o `Release`.
+3. Ejecutar con `Ctrl + F5`.
 
-### 8. Recorrido en Anchura
-Esta opción te permite realizar un recorrido en anchura (BFS) en el grafo. El programa mostrará el orden en el que se visitan los vértices durante el recorrido.
+### Opción 2: g++ (Linux/macOS o Windows con MinGW)
 
-### 9. Camino del Viajero
-Utiliza esta funcionalidad para encontrar el camino óptimo del viajero, que busca visitar todos los vértices del grafo exactamente una vez y regresar al punto de partida. El programa mostrará el camino óptimo y su longitud.
+Desde la raíz del repositorio:
 
-Esperamos que este programa te sea útil para trabajar con grafos y aplicar diferentes algoritmos sobre ellos. ¡Disfruta explorando las funcionalidades del programa y experimentando con los algoritmos implementados!
+```bash
+g++ -std=c++11 -o grafos Grafos/Grafos.cpp
+./grafos
+```
+
+> Nota: el programa usa `system("cls")` para limpiar pantalla, comando propio de Windows.
+> En Linux/macOS no limpia la consola, pero la lógica del programa funciona igual.
+
+## Uso básico
+
+1. Primero cargar los 5 vértices.
+2. Luego cargar las aristas con sus pesos.
+3. Ejecutar cualquiera de las opciones del menú.
+
+## Estructura del código
+
+- `Grafos/Grafos.cpp`: menú principal e integración de algoritmos.
+- `Grafos/grafo.h`: estructura base del grafo y conversiones.
+- `Grafos/dijkstra.h`: caminos mínimos desde un origen.
+- `Grafos/floydWarshall.h`: caminos mínimos para todos los pares.
+- `Grafos/recorridos.h`: recorridos DFS y BFS.
+- `Grafos/hamilton.h`: búsqueda exhaustiva de ciclo mínimo del viajante.
+
+## Screenshot
+![img.png](img.png)
